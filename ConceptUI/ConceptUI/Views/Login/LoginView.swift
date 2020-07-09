@@ -17,7 +17,7 @@ struct LoginView: View {
         VStack {
             Form {
                 FormTextField(systemName: "envelope", textfieldName: "Email", input: $email)
-                FormSecureField(text: "lock", password: $password, hidden: $hidePassword)
+                FormSecureField(text: "PASSWORD", password: $password, hidden: $hidePassword)
             }
             GreenBorderButton(text: "LOG IN", function: signUpButtonPressed )
         }

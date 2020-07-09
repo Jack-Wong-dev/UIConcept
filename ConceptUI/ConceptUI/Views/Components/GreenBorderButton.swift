@@ -17,7 +17,7 @@ struct GreenBorderButton: View {
             Text(text)
                 .font(.title)
                 .bold()
-                .foregroundColor(.green)
+                .foregroundColor(.white)
                 .padding(.vertical, /*@START_MENU_TOKEN@*/10/*@END_MENU_TOKEN@*/)
         })
         .frame(minWidth: 0, maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/)

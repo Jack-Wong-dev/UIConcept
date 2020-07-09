@@ -12,6 +12,8 @@
 		0AB5937624B6A15700828806 /* GreenBorderButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AB5937524B6A15700828806 /* GreenBorderButton.swift */; };
 		0AB5937824B6A24000828806 /* FormTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AB5937724B6A24000828806 /* FormTextField.swift */; };
 		0AB5937A24B6A35400828806 /* FormSecureField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AB5937924B6A35400828806 /* FormSecureField.swift */; };
+		0ADC404024B6B89600FA2294 /* ProgramTypeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ADC403F24B6B89600FA2294 /* ProgramTypeView.swift */; };
+		0ADC404224B6B93600FA2294 /* SelectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ADC404124B6B93600FA2294 /* SelectionView.swift */; };
 		0AF29FB724B629DB00E502FD /* ConceptUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AF29FB624B629DB00E502FD /* ConceptUIApp.swift */; };
 		0AF29FB924B629DB00E502FD /* WelcomeScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AF29FB824B629DB00E502FD /* WelcomeScreen.swift */; };
 		0AF29FBB24B629E000E502FD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0AF29FBA24B629E000E502FD /* Assets.xcassets */; };
@@ -29,6 +31,8 @@
 		0AB5937524B6A15700828806 /* GreenBorderButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GreenBorderButton.swift; sourceTree = "<group>"; };
 		0AB5937724B6A24000828806 /* FormTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormTextField.swift; sourceTree = "<group>"; };
 		0AB5937924B6A35400828806 /* FormSecureField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormSecureField.swift; sourceTree = "<group>"; };
+		0ADC403F24B6B89600FA2294 /* ProgramTypeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgramTypeView.swift; sourceTree = "<group>"; };
+		0ADC404124B6B93600FA2294 /* SelectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectionView.swift; sourceTree = "<group>"; };
 		0AF29FB324B629DB00E502FD /* ConceptUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ConceptUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0AF29FB624B629DB00E502FD /* ConceptUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConceptUIApp.swift; sourceTree = "<group>"; };
 		0AF29FB824B629DB00E502FD /* WelcomeScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeScreen.swift; sourceTree = "<group>"; };
@@ -56,8 +60,11 @@
 		0AB5936D24B67E2900828806 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				0AF29FC724B62B9700E502FD /* HomeView.swift */,
 				0AF29FB824B629DB00E502FD /* WelcomeScreen.swift */,
 				0AB5937424B69F3200828806 /* Components */,
+				0AF29FC924B62F7700E502FD /* Login */,
+				0ADC403E24B6B86B00FA2294 /* ProgramTypeView */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -89,6 +96,15 @@
 			path = Components;
 			sourceTree = "<group>";
 		};
+		0ADC403E24B6B86B00FA2294 /* ProgramTypeView */ = {
+			isa = PBXGroup;
+			children = (
+				0ADC403F24B6B89600FA2294 /* ProgramTypeView.swift */,
+				0ADC404124B6B93600FA2294 /* SelectionView.swift */,
+			);
+			path = ProgramTypeView;
+			sourceTree = "<group>";
+		};
 		0AF29FAA24B629DB00E502FD = {
 			isa = PBXGroup;
 			children = (
@@ -110,7 +126,6 @@
 			children = (
 				0AB5936E24B67E3D00828806 /* Other */,
 				0AB5936D24B67E2900828806 /* Views */,
-				0AF29FC924B62F7700E502FD /* Login */,
 				0AF29FB624B629DB00E502FD /* ConceptUIApp.swift */,
 				0AF29FC524B62B8300E502FD /* selectState.swift */,
 				0AF29FBA24B629E000E502FD /* Assets.xcassets */,
@@ -131,7 +146,6 @@
 		0AF29FC924B62F7700E502FD /* Login */ = {
 			isa = PBXGroup;
 			children = (
-				0AF29FC724B62B9700E502FD /* HomeView.swift */,
 				0AF29FCA24B62F8D00E502FD /* LoginView.swift */,
 				0AF29FCE24B635E800E502FD /* SignUpView.swift */,
 				0AF29FD024B6631C00E502FD /* PrototypeSignUpView.swift */,
@@ -213,7 +227,9 @@
 				0AF29FCB24B62F8D00E502FD /* LoginView.swift in Sources */,
 				0AB5937A24B6A35400828806 /* FormSecureField.swift in Sources */,
 				0AF29FB924B629DB00E502FD /* WelcomeScreen.swift in Sources */,
+				0ADC404224B6B93600FA2294 /* SelectionView.swift in Sources */,
 				0AF29FC824B62B9700E502FD /* HomeView.swift in Sources */,
+				0ADC404024B6B89600FA2294 /* ProgramTypeView.swift in Sources */,
 				0AB5937624B6A15700828806 /* GreenBorderButton.swift in Sources */,
 				0AF29FCF24B635E800E502FD /* SignUpView.swift in Sources */,
 				0AF29FB724B629DB00E502FD /* ConceptUIApp.swift in Sources */,

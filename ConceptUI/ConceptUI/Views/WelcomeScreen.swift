@@ -12,7 +12,8 @@ struct WelcomeScreen: View {
         ZStack {
             Color.black
             VStack {
-                HomeView()
+//                HomeView()
+                SelectionView()
             }
         }
     }
