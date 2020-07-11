@@ -7,11 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0A169C4C24B7C3EA00CFADC0 /* GreenProgressViewStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A169C4B24B7C3EA00CFADC0 /* GreenProgressViewStyle.swift */; };
 		0AB5937124B67E7200828806 /* GradientBackGroundStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AB5937024B67E7200828806 /* GradientBackGroundStyle.swift */; };
 		0AB5937324B67F1600828806 /* GreenBorderButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AB5937224B67F1600828806 /* GreenBorderButtonStyle.swift */; };
 		0AB5937624B6A15700828806 /* GreenBorderButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AB5937524B6A15700828806 /* GreenBorderButton.swift */; };
 		0AB5937824B6A24000828806 /* FormTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AB5937724B6A24000828806 /* FormTextField.swift */; };
 		0AB5937A24B6A35400828806 /* FormSecureField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AB5937924B6A35400828806 /* FormSecureField.swift */; };
+		0AD6CC4E24B6CFF90014A026 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AD6CC4D24B6CFF90014A026 /* LoginViewModel.swift */; };
 		0ADC404024B6B89600FA2294 /* ProgramTypeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ADC403F24B6B89600FA2294 /* ProgramTypeView.swift */; };
 		0ADC404224B6B93600FA2294 /* SelectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ADC404124B6B93600FA2294 /* SelectionView.swift */; };
 		0AF29FB724B629DB00E502FD /* ConceptUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AF29FB624B629DB00E502FD /* ConceptUIApp.swift */; };
@@ -26,11 +28,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0A169C4B24B7C3EA00CFADC0 /* GreenProgressViewStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GreenProgressViewStyle.swift; sourceTree = "<group>"; };
 		0AB5937024B67E7200828806 /* GradientBackGroundStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientBackGroundStyle.swift; sourceTree = "<group>"; };
 		0AB5937224B67F1600828806 /* GreenBorderButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GreenBorderButtonStyle.swift; sourceTree = "<group>"; };
 		0AB5937524B6A15700828806 /* GreenBorderButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GreenBorderButton.swift; sourceTree = "<group>"; };
 		0AB5937724B6A24000828806 /* FormTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormTextField.swift; sourceTree = "<group>"; };
 		0AB5937924B6A35400828806 /* FormSecureField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormSecureField.swift; sourceTree = "<group>"; };
+		0AD6CC4D24B6CFF90014A026 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 		0ADC403F24B6B89600FA2294 /* ProgramTypeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgramTypeView.swift; sourceTree = "<group>"; };
 		0ADC404124B6B93600FA2294 /* SelectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectionView.swift; sourceTree = "<group>"; };
 		0AF29FB324B629DB00E502FD /* ConceptUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ConceptUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -57,7 +61,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		0AB5936D24B67E2900828806 /* Views */ = {
+		0A169C4A24B7C3CF00CFADC0 /* ProgressViewStyles */ = {
+			isa = PBXGroup;
+			children = (
+				0A169C4B24B7C3EA00CFADC0 /* GreenProgressViewStyle.swift */,
+			);
+			path = ProgressViewStyles;
+			sourceTree = "<group>";
+		};
+		0AB5936D24B67E2900828806 /* View */ = {
 			isa = PBXGroup;
 			children = (
 				0AF29FC724B62B9700E502FD /* HomeView.swift */,
@@ -66,12 +78,13 @@
 				0AF29FC924B62F7700E502FD /* Login */,
 				0ADC403E24B6B86B00FA2294 /* ProgramTypeView */,
 			);
-			path = Views;
+			path = View;
 			sourceTree = "<group>";
 		};
 		0AB5936E24B67E3D00828806 /* Other */ = {
 			isa = PBXGroup;
 			children = (
+				0A169C4A24B7C3CF00CFADC0 /* ProgressViewStyles */,
 				0AB5936F24B67E6200828806 /* Button Styles */,
 			);
 			path = Other;
@@ -94,6 +107,21 @@
 				0AB5937924B6A35400828806 /* FormSecureField.swift */,
 			);
 			path = Components;
+			sourceTree = "<group>";
+		};
+		0AD6CC4B24B6CF8B0014A026 /* View Model */ = {
+			isa = PBXGroup;
+			children = (
+				0AD6CC4D24B6CFF90014A026 /* LoginViewModel.swift */,
+			);
+			path = "View Model";
+			sourceTree = "<group>";
+		};
+		0AD6CC4C24B6CFA80014A026 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		0ADC403E24B6B86B00FA2294 /* ProgramTypeView */ = {
@@ -124,8 +152,10 @@
 		0AF29FB524B629DB00E502FD /* ConceptUI */ = {
 			isa = PBXGroup;
 			children = (
+				0AD6CC4C24B6CFA80014A026 /* Model */,
+				0AB5936D24B67E2900828806 /* View */,
+				0AD6CC4B24B6CF8B0014A026 /* View Model */,
 				0AB5936E24B67E3D00828806 /* Other */,
-				0AB5936D24B67E2900828806 /* Views */,
 				0AF29FB624B629DB00E502FD /* ConceptUIApp.swift */,
 				0AF29FC524B62B8300E502FD /* selectState.swift */,
 				0AF29FBA24B629E000E502FD /* Assets.xcassets */,
@@ -225,11 +255,13 @@
 				0AF29FD124B6631C00E502FD /* PrototypeSignUpView.swift in Sources */,
 				0AF29FC624B62B8300E502FD /* selectState.swift in Sources */,
 				0AF29FCB24B62F8D00E502FD /* LoginView.swift in Sources */,
+				0A169C4C24B7C3EA00CFADC0 /* GreenProgressViewStyle.swift in Sources */,
 				0AB5937A24B6A35400828806 /* FormSecureField.swift in Sources */,
 				0AF29FB924B629DB00E502FD /* WelcomeScreen.swift in Sources */,
 				0ADC404224B6B93600FA2294 /* SelectionView.swift in Sources */,
 				0AF29FC824B62B9700E502FD /* HomeView.swift in Sources */,
 				0ADC404024B6B89600FA2294 /* ProgramTypeView.swift in Sources */,
+				0AD6CC4E24B6CFF90014A026 /* LoginViewModel.swift in Sources */,
 				0AB5937624B6A15700828806 /* GreenBorderButton.swift in Sources */,
 				0AF29FCF24B635E800E502FD /* SignUpView.swift in Sources */,
 				0AF29FB724B629DB00E502FD /* ConceptUIApp.swift in Sources */,

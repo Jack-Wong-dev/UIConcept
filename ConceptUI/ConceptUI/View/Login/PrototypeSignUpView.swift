@@ -58,9 +58,7 @@ struct PrototypeSignUpView: View {
                 }
                 
             }
-//            SignInWithAppleButton(onRequest: {_ in }, onCompletion: {_ in })
-//                .border(Color.white, width: 1)
-            
+
             Button(action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/, label: {
                 Text("SIGN UP")
                     .font(.title2)

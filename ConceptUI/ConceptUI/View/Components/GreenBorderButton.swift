@@ -15,17 +15,17 @@ struct GreenBorderButton: View {
     var body: some View {
         Button(action: function, label: {
             Text(text)
-                .font(.title)
+                .font(.title2)
                 .bold()
-                .foregroundColor(.white)
+                .foregroundColor(.primary)
+//                .foregroundColor(.green)
                 .padding(.vertical, /*@START_MENU_TOKEN@*/10/*@END_MENU_TOKEN@*/)
+                .frame(minWidth: 0, maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/)
+                .overlay(
+                    Rectangle()
+                        .stroke(Color.green, lineWidth: 3)
+                )
         })
-        .frame(minWidth: 0, maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/)
-        .overlay(
-            Rectangle()
-                .stroke(Color.green, lineWidth: 3)
-        )
-        .padding(/*@START_MENU_TOKEN@*/.all/*@END_MENU_TOKEN@*/, /*@START_MENU_TOKEN@*/10/*@END_MENU_TOKEN@*/)
     }
 }
 

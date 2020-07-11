@@ -8,11 +8,11 @@
 import SwiftUI
 
 struct LoginView: View {
-    
+
     @State private var email = String()
     @State private var password = String()
     @State private var hidePassword: Bool = true
-    
+
     var body: some View {
         VStack {
             Form {
@@ -22,7 +22,7 @@ struct LoginView: View {
             GreenBorderButton(text: "LOG IN", function: signUpButtonPressed )
         }
     }
-    
+
     private func signUpButtonPressed(){
         print("DEBUG: Sign up button pressed")
     }

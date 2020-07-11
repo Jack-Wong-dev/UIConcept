@@ -9,13 +9,10 @@ import SwiftUI
 
 struct WelcomeScreen: View {
     var body: some View {
-        ZStack {
-            Color.black
-            VStack {
-//                HomeView()
-                SelectionView()
-            }
-        }
+        //        HomeView()
+        //                SelectionView()
+        ProgramTypeView()
+//            .preferredColorScheme(.dark)
     }
 }
 

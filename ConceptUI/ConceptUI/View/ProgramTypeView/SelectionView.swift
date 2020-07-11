@@ -33,6 +33,8 @@ struct SelectionView_Previews: PreviewProvider {
             SelectionView()
                 .preferredColorScheme(.dark)
                 .previewDevice("iPhone 11 Pro Max")
+            SelectionView()
+                .previewDevice("iPhone 11 Pro Max")
         }
     }
 }
@@ -49,13 +51,13 @@ struct GridButtonView: View {
             selected = name
         }, label: {
             Text(name)
-                .foregroundColor(.white)
+                .foregroundColor(.primary)
                 .bold()
                 .padding(.vertical)
                 .frame(minWidth: 0, maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/)
                 .overlay(
                     Rectangle()
-                        .stroke( selected == name ? Color.green : Color.gray, lineWidth: 3)
+                        .stroke( selected == name ? Color.green : Color.primary, lineWidth: 3)
                 )
                 .padding([.leading,.trailing], 10)
                 .opacity(selected == name ? 1 : 0.5)
