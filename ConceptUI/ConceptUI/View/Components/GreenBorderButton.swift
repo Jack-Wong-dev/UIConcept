@@ -16,9 +16,8 @@ struct GreenBorderButton: View {
         Button(action: function, label: {
             Text(text)
                 .font(.title2)
-                .bold()
+                .fontWeight(.bold)
                 .foregroundColor(.primary)
-//                .foregroundColor(.green)
                 .padding(.vertical, /*@START_MENU_TOKEN@*/10/*@END_MENU_TOKEN@*/)
                 .frame(minWidth: 0, maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/)
                 .overlay(

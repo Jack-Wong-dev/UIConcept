@@ -16,11 +16,13 @@ struct LoginView: View {
     var body: some View {
         VStack {
             Form {
-                FormTextField(systemName: "envelope", textfieldName: "Email", input: $email)
+                FormTextField(systemName: "envelope", textfieldName: "EMAIL", input: $email)
                 FormSecureField(text: "PASSWORD", password: $password, hidden: $hidePassword)
             }
             GreenBorderButton(text: "LOG IN", function: signUpButtonPressed )
+                .padding(.horizontal)
         }
+        .frame(alignment: .leading)
     }
 
     private func signUpButtonPressed(){

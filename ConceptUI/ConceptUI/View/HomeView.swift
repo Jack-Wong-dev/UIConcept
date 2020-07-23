@@ -38,7 +38,7 @@ struct ToggleView: View {
             }, label: {
                 Text("LOG IN")
                     .font(.title2)
-                    .bold()
+                    .fontWeight(.bold)
                     .foregroundColor(login ? .green : .gray)
             })
             Button(action: {
@@ -48,7 +48,7 @@ struct ToggleView: View {
             }, label: {
                 Text("SIGN UP")
                     .font(.title2)
-                    .bold()
+                    .fontWeight(.bold)
                     .foregroundColor(login ? .gray : .green)
             })
         }
@@ -60,6 +60,9 @@ struct Home_Previews: PreviewProvider {
     static var previews: some View {
         Group {
             HomeView()
+                .previewDevice("iPhone 11 Pro Max")
+            HomeView()
+                .preferredColorScheme(.dark)
                 .previewDevice("iPhone 11 Pro Max")
         }
     }

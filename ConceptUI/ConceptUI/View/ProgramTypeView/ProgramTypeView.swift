@@ -16,7 +16,7 @@ struct ProgramTypeView: View {
     var body: some View {
         ZStack {
             VStack {
-                Text("Select Sport").font(.title2).bold()
+                Text("Select Sport").font(.title2).fontWeight(.bold)
                 SelectionView()
             }
             if sheetIsPresented {
@@ -71,7 +71,7 @@ struct SelectionSheetView: View {
                 LazyVStack(spacing: 10) {
                     Text("Baseball")
                         .font(.headline)
-                        .bold()
+                        .fontWeight(.bold)
                         .padding(.top, /*@START_MENU_TOKEN@*/10/*@END_MENU_TOKEN@*/)
                     ForEach(0..<100) { value in
                         GridButtonView(name: "Choice \(value)", selected: $selection)

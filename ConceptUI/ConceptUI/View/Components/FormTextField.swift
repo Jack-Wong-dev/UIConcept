@@ -15,10 +15,15 @@ struct FormTextField: View {
     var body: some View {
         HStack {
             Image(systemName: systemName)
-                .aspectRatio( 1/1, contentMode: .fit)
-            Spacer()
             TextField(textfieldName, text: $input)
         }
     }
 }
 
+
+
+struct FormTextField_Previews: PreviewProvider {
+    static var previews: some View {
+        FormTextField(systemName: "envelope", textfieldName: "Email", input: .constant(""))
+    }
+}

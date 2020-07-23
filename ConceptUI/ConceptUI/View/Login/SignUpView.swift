@@ -20,8 +20,8 @@ struct SignUpView: View {
     var body: some View {
         VStack{
             Form {
-                FormTextField(systemName: "person", textfieldName: "FIRST NAME", input: $firstName)
-                FormTextField(systemName: "person", textfieldName: "LAST NAME", input: $lastName)
+                FormTextField(systemName: "person.crop.rectangle", textfieldName: "FIRST NAME", input: $firstName)
+                FormTextField(systemName: "person.crop.rectangle", textfieldName: "LAST NAME", input: $lastName)
                 FormTextField(systemName: "envelope", textfieldName: "EMAIL", input: $email)
                 FormSecureField(text: "PASSWORD", password: $password, hidden: $hidePassword)
                 FormSecureField(text: "CONFIRM PASSWORD", password: $confirmPassword, hidden: $hideConfirmPassword)

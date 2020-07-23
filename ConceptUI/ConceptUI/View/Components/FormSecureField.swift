@@ -16,7 +16,7 @@ struct FormSecureField: View {
     
     var body: some View {
         HStack {
-            Image(systemName: "lock")
+            Image(systemName: "lock.rectangle")
             if hidden {
                 SecureField(text, text: $password)
             }else {
@@ -32,3 +32,9 @@ struct FormSecureField: View {
 
 
 
+
+struct FormSecureField_Previews: PreviewProvider {
+    static var previews: some View {
+        FormSecureField(text: "PASSWORD", password: .constant("password"), hidden: .constant(true))
+    }
+}

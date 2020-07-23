@@ -24,6 +24,8 @@ struct SelectionView: View {
             }
         }
     }
+    
+
 }
 
 struct SelectionView_Previews: PreviewProvider {
@@ -52,7 +54,7 @@ struct GridButtonView: View {
         }, label: {
             Text(name)
                 .foregroundColor(.primary)
-                .bold()
+                .fontWeight(.bold)
                 .padding(.vertical)
                 .frame(minWidth: 0, maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/)
                 .overlay(
